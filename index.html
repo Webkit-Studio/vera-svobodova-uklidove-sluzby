@@ -6,38 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Úklidové služby - Pravidelný úklid domů a kanceláří</title>
     <meta name="description" content="Profesionální a spolehlivý úklid přizpůsobený vašim potřebám. Pravidelný a generální úklid bytových domů, kanceláří a společných prostor s osobním přístupem a odbornou péčí.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
     
     <header class="navbar">
-      <a href="#home">O mně</a>
-      <a href="#services">Služby</a>
-      <a href="#contact">Kontakt</a>
+      <div class="navbar-menu">
+        <a href="#o-mne">O&nbsp;mně</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#reference">Reference</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <a class="button--primary" href="#kontakt">Kontakt</a>
     </header>
     
-    <section class="main-banner">
-      <h1>Spolehlivý úklid na míru vašim potřebám</h1>
-      <button>Chci poptat úklid</button>
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <h1>Spolehlivý úklid<br>na míru vašim potřebám</h1>
+          <div class="numbers-container">
+            <div class="numbers-item"> 
+              <p class="numbers number-1">4</p>
+              <p class="numbers-text">spokojení klienti</p>
+            </div>
+            <div class="divider"></div>
+            <div class="numbers-item"> 
+              <p class="numbers number-2">6</p>
+              <p class="numbers-text">pravidelně uklízených  objektů</p>
+            </div>
+            <div class="divider"></div>
+            <div class="numbers-item"> 
+              <p class="numbers number-3">5</p>
+              <p class="numbers-text">měsíců v provozu</p>
+            </div>
+          </div>
+          <a class="button--primary" href="#kontakt">Chci poptat úklid</a>
+        </div>
+      </div>
+      <div class="wave-container">
+        <svg class="wave-path" viewBox="0 0 1440 250">
+          <path fill="#f2f2f2" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,74.7C274.3,96,343,160,411,181.3C480,203,549,181,617,160C685.7,139,754,117,823,128C891.4,139,960,181,1029,181.3C1097.1,181,1166,139,1234,128C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+        </svg>
+      </div>
     </section>
     
-    <section class="services">
-      <div class="service">
-        <h2>Pravidelný úklid</h2>
-        <p>Zametení a vytření dostupných podlahových ploch v domě</p>
-        <!-- More services details -->
+    <section id="o-mne">
+      <div class="container">
+        <div class="content">
+          <h2 class="label">O mně</h2>
+          <h3>Jmenuji se Věrka</h3>
+          <p>S&nbsp;nadšením a&nbsp;úsměvem na tváři se starám o&nbsp;úklid bytových domů a&nbsp;kanceláří. Můj cíl je přinést vám čisté a&nbsp;svěží prostředí, ve kterém se budete cítit skvěle.</p>
+        </div>
       </div>
-      <div class="service">
-        <h2>Generální úklid</h2>
-        <p>Smětení pavučin</p>
-        <!-- More services details -->
+    </section>
+
+    <section id="reference">
+      <div class="container">
+        <div class="content">
+          <h2 class="label">Reference</h2>
+          <h3>Co o mě říkají klienti?</h3>
+          <div class="clients-container">
+            <div class="cleints-item">
+              <p class=""></p>
+              <p class=""></p>
+              <p class=""></p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- More services -->
+    </section>
+
+    <section id="sluzby">
+      <div class="container">
+        <div class="content">
+          <h2 class="label">Služby</h2>
+          <h3></h3>
+          <p>Rozsah úklidů ráda přizpůsobím vašim individuálním potřebám.</p>
+          <div class="service">
+            <h4>Pravidelný úklid</h4>
+            <p>Zametení a vytření dostupných podlahových ploch v domě</p>
+            <!-- More services details -->
+          </div>
+          <div class="service">
+            <h4>Generální úklid</h4>
+            <p>Smětení pavučin</p>
+            <!-- More services details -->
+          </div>
+        </div>
+      </div>
     </section>
     
-    <footer class="contact">
-      <h2>Kontakt</h2>
-      <!-- Contact form -->
+    <footer id="kontakt">
+      <div class="container">
+        <div class="content">
+          <h2 class="label">Kontakt</h2>
+          <h3>Chcete si domluvit schůzku?</h3>
+          <p>Pojďme se poznat osobně. Získáte ode mě nezávislou cenovou nabídku na pravidelný úklid.</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Jméno</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Napište zprávu...</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="button--primary" type="submit">Odeslat</button>
+          </form>
+        </div>
+      </div>
     </footer>
 
   </body>
