@@ -95,6 +95,7 @@ header, section, footer, p {
   padding: 0 80px;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar-menu a {
@@ -105,10 +106,12 @@ header, section, footer, p {
   height: 100%;
   padding: 20px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar-menu a:hover {
-  border-bottom: solid 4px var(--color-blue);
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 /* – – – HERO – – – */

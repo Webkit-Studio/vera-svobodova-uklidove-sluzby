@@ -1,35 +1,41 @@
+// Purpose: This file is used to initialize the PureCounter class and set the parameters for the counter.
 document.addEventListener("DOMContentLoaded", function() {  
     
-    const durationTime = 1.5;   // Duration of loading animation
-    const delayTime = 2;        // Duration od delay
+    // Parameters for the counter
+    const numberClients = 4;            // Number of clients
+    const numberProjects = 6;           // Number of projects
+    const numberExistence = 5;          // Number of months/years of existence
 
-    const counter1 = new PureCounter({
-        selector: '.number-1', 
-        start: 0,
-        end: 4,
-        duration: durationTime,
-        delay: delayTime,
-        once: true,
-        decimals: 0,
-    });
+    const durationTime = 1;             // Duration of loading animation
+    const delayTime = 10;               // Duration od delay
 
-    const counter2 = new PureCounter({
-        selector: '.number-2', 
-        start: 0,
-        end: 6,
-        duration: durationTime,
-        delay: delayTime,
-        once: true,
-        decimals: 0,
-    });
+            const counter1 = new PureCounter({
+                selector: '.number--clients', 
+                start: 0,
+                end: numberClients,
+                duration: durationTime,
+                delay: delayTime,
+                once: true,
+                decimals: 0,
+            });
 
-    const counter3 = new PureCounter({
-        selector: '.number-3',
-        start: 0,
-        end: 5,
-        duration: durationTime,
-        delay: delayTime,
-        once: true,
-        decimals: 0,
-    });
-});
+            const counter2 = new PureCounter({
+                selector: '.number--projects', 
+                start: 0,
+                end: numberProjects,
+                duration: durationTime,
+                delay: delayTime,
+                once: true,
+                decimals: 0,
+            });
+
+            const counter3 = new PureCounter({
+                selector: '.number--existence',
+                start: 0,
+                end: numberExistence,
+                duration: durationTime,
+                delay: delayTime,
+                once: true,
+                decimals: 0,
+            });
+        });
