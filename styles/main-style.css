@@ -1,0 +1,464 @@
+/* This file contains all styles for the website. Here is content of the file: */
+/* 01. General */
+/* 02. Components */
+/* 03. Sections */
+/* 04. Navigation */
+/* 05. Hero */
+/* 06. About me */
+/* 07. Services */
+/* 08. References */
+/* 09. Contact */
+/* 10. Responsive */
+
+
+
+
+
+/* – – – GENERAL – – – */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-pink: #ffd9df; 
+  --color-blue: #007bff;
+  --color-black: #121212;
+  --color-white: #f2f2f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+
+  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* – – –  COMPONENTS – – – */
+
+/* – CONTAINERS – */
+
+.container {
+  width: 100%;
+  padding: 0 160px;
+  box-sizing: border-box;
+}
+
+/* – Desktop – */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+/* – Tablet – */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+/* – Mobile – */
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+.content.center {
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+.content.left {
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+  gap: 0.4rem;
+}
+.row.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.row.left {
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+.row.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  gap: 0.4rem;
+}
+.column.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.column.left {
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+
+/* – TEXT STYLES – */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.label {
+  display: inline-block;
+  width: auto!important;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 4px; 
+
+  color: var(--color-blue);
+  background-color: #d5e8fb;
+ 
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; 
+}
+.label.text-light {
+  color: #848484;
+}
+
+h1 {
+  color: var(--color-blue);
+  font-size: 4.8rem;
+  line-height: 125%;
+}
+
+h3 {
+  color: var(--color-blue);
+  font-size: 3.4rem;
+  line-height: 120%;
+}
+
+.wg-4 { font-weight: 400;}
+.wg-5 { font-weight: 500;}
+.wg-6 { font-weight: 600;}
+.wg-7 { font-weight: 700;}
+
+/* – COLORS – */
+
+.text-dark { color: var(--color-black);}
+.text-light { color: var(--color-white);}
+.text-blue { color: var(--color-blue);}
+.text-pink { color: var(--color-pink);}
+
+.bg-dark { background-color: var(--color-black);}
+.bg-light { background-color: var(--color-white);}
+.bg-blue { background-color: var(--color-blue);}
+.bg-pink { background-color: var(--color-pink);}
+
+.fill-dark { fill: var(--color-black);}
+.fill-light { fill: var(--color-white);}
+.fill-blue { fill: var(--color-blue);}
+.fill-pink { fill: var(--color-pink);}
+
+/* – BUTTONS – */
+
+.button--primary {
+  background-color: var(--color-blue);
+
+  color: var(--color-white);
+  padding: 16px 32px;
+
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+.button--primary:hover {
+  background-color: #0056b3;
+}
+
+/* – WAVES – */
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  line-height: 0;
+}
+
+.navbar > .wave-container {
+  top: 99%;
+  bottom: auto;
+}
+
+.wave-path {
+  width: 100%;
+}
+
+
+
+
+
+/* – – – SECTIONS – – – */
+
+header, section, footer, p {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section, footer {
+  position: relative;
+  padding: 120px 0 260px;
+}
+
+.z-1 { z-index: 10;}
+.z-2 { z-index: 20;}
+.z-3 { z-index: 30;}
+.z-4 { z-index: 40;}
+.z-5 { z-index: 50;}
+
+.w-10 { width: 10%; }
+.w-20 { width: 20%; }
+.w-30 { width: 30%; }
+.w-33 { width: 33.3%; }
+.w-40 { width: 40%; }
+.w-50 { width: 50%; }
+.w-60 { width: 60%; }
+.w-70 { width: 70%; }
+.w-80 { width: 80%; }
+.w-90 { width: 90%; }
+.w-100 { width: 100%; }
+
+.m-0 { margin: 0; }
+
+.m-b-0 { margin-bottom: 0; }
+.m-b-1 { margin-bottom: 1rem; }
+.m-b-2 { margin-bottom: 2rem; }
+.m-b-3 { margin-bottom: 3rem; }
+.m-b-4 { margin-bottom: 4rem; }
+.m-b-5 { margin-bottom: 5rem; }
+
+.m-t-0 { margin-top: 0; }
+.m-t-1 { margin-top: 1rem; }
+.m-t-2 { margin-top: 2rem; }
+.m-t-3 { margin-top: 3rem; }
+.m-t-4 { margin-top: 4rem; }
+.m-t-5 { margin-top: 5rem; }
+
+.p-0 { padding: 0; }
+
+
+
+/* – – – NAVIGATION – – – */
+
+.navbar {
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-menu a {
+  float: left;
+  display: block;
+  color: var(--color-blue);
+  text-align: center;
+  height: 100%;
+  padding: 20px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-menu a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+
+
+
+
+/* – – – HERO – – – */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.number {
+  font-size: 6rem;
+  line-height: 6rem;
+  margin: 0;
+  font-weight: 700;
+  display: inline;
+}
+
+
+
+
+
+/* – – – ABOUT ME – – – */
+
+
+
+
+
+/* – – – SERVICES – – – */
+
+.services > .container > .content > .row.left {
+  gap: 5%;
+}
+
+.services > .container > .content > .row.left > div {
+  padding: 2rem 2rem 2.6rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  box-shadow:
+      1px 2px 2px rgba(0, 0, 0, 0.1),
+      2px 4px 4px rgba(0, 0, 0, 0.1),
+      4px 8px 8px rgba(0, 0, 0, 0.1),
+      8px 16px 16px rgba(0, 0, 0, 0.1),
+      16px 32px 32px rgba(0, 0, 0, 0.1);
+}
+
+.services > .container > .content > .row.left > div > div > p {
+  margin: 0;
+}
+
+.services > .container > .content > .row.left > div > h4 {
+  font-size: 2.4rem;
+  line-height: 120%;
+}
+
+
+
+
+
+
+/* – – – REFERENCES – – – */
+
+.references > .container > .content > .row.left {
+  gap: 5%;
+}
+
+.feedback {
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+
+
+
+
+/* – – – CONTACT – – – */
+
+/* – CONTACT FORM – */
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #0044cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #003399;
+}
+
+
+
+
+
+/* – – – RESPONSIVE SETTINGS – – – */
+
+
+.hide {
+  display: none;
+}

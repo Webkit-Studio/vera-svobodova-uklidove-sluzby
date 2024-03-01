@@ -2,18 +2,18 @@
 document.addEventListener("DOMContentLoaded", function() {  
     
     // Parameters for the counter
-    const numberClients = 4;            // Number of clients
-    const numberProjects = 6;           // Number of projects
-    const numberExistence = 5;          // Number of months/years of existence
+    const numberClients = 9;            // Number of clients
+    const numberProjects = 15;           // Number of projects
+    const numberExistence = 6;          // Number of months/years of existence
 
-    const durationTime = 1;             // Duration of loading animation
+    const durationTime = 0.5;             // Duration of loading animation
     const delayTime = 10;               // Duration od delay
 
             const counter1 = new PureCounter({
                 selector: '.number--clients', 
                 start: 0,
                 end: numberClients,
-                duration: durationTime,
+                duration: durationTime + Math.random() * (0.9 - 0.1),
                 delay: delayTime,
                 once: true,
                 decimals: 0,
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 selector: '.number--projects', 
                 start: 0,
                 end: numberProjects,
-                duration: durationTime,
+                duration: durationTime + Math.random() * (0.9 - 0.1),
                 delay: delayTime,
                 once: true,
                 decimals: 0,
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 selector: '.number--existence',
                 start: 0,
                 end: numberExistence,
-                duration: durationTime,
+                duration: durationTime + Math.random() * (0.9 - 0.1),
                 delay: delayTime,
                 once: true,
                 decimals: 0,
