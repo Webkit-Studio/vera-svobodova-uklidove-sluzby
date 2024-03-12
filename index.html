@@ -10,8 +10,8 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script src="/scripts/counter.js"></script>
-    <script src="/scripts/animations.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="/js/animations.js"></script>
 
     <link rel="stylesheet" href="/styles/main-style.css">
     <!-- Google font: Poppins -->
@@ -48,22 +48,22 @@
     <section class="hero bg-pink text-blue z-1">
       <div class="container">
         <div class="content left animation--parallax">
-          <h1>Spolehlivý úklid<br>na míru vašim potřebám</h1>
+          <h1 class="animation--fadeInFromSide">Spolehlivý úklid<br>na míru vašim potřebám</h1>
           <div class="row left w-80">
-            <div class="w-33"> 
+            <div class="w-33 animation--fadeInFromBottom d-1"> 
               <p class="number number--clients">9</p><p class="number hide">+</p>
               <p class="text-blue">spokojených klientů</p>
             </div>
-            <div class="w-33"> 
+            <div class="w-33 animation--fadeInFromBottom d-2"> 
               <p class="number number--projects">15</p><p class="number">+</p>
               <p class="text-blue">pravidelně uklízených objektů</p>
             </div>
-            <div class="w-33 hide"> 
+            <div class="w-33 animation--fadeInFromBottom d-3 hide"> 
               <p class="number number--existence">6</p><p class="number hide">+</p>
               <p class="text-blue">měsíců v provozu</p>
             </div>
           </div>
-          <a class="button--primary" href="#kontakt">Kontakt</a>
+          <a class="button--primary animation--fadeInFromBottom d-3" href="#kontakt">Kontakt</a>
         </div>
       </div>
       <div class="wave-container">
@@ -93,29 +93,33 @@
     <section class="services bg-blue z-3" id="sluzby">
       <div class="container">
         <div class="content left animation--parallax">
-          <h2 class="label text-light">Služby</h2>
-          <h3 class="text-light">Úklid všeho druhu</h3>
-          <p class="text-light">Rozsah úklidů ráda přizpůsobím vašim individuálním potřebám.</p>
+          <h2 class="label animation--fadeInFromSide">Služby</h2>
+          <h3 class="text-light animation--fadeInFromSide">Úklid všeho druhu</h3>
+          <p class="text-light animation--fadeInFromSide">Rozsah úklidů ráda přizpůsobím vašim individuálním potřebám.</p>
           <div class="row left w-100">
-            <div class="service column left bg-light text-dark w-33">
+            <div class="service column left bg-light text-dark w-33 animation--fadeInFromSide d-1">
               <p class="label">1x týdně</p>
               <h4 class="m-b-1">Pravidelný<br>úklid</h4>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Zametení a&nbsp;vytření dostupných podlahových ploch v&nbsp;domě</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Otření madel zábradlí</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Úklid výtahové kabiny, včetně leštění zrcadla</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Úklid u&nbsp;hlavních vchodových dveří a&nbsp;mytí vchodových dveří</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Likvidace reklamních prospektů u&nbsp;schránek</p></div>
+              <div class="column gap-1">
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Zametení a&nbsp;vytření dostupných podlahových ploch v&nbsp;domě</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Otření madel zábradlí</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Úklid výtahové kabiny, včetně leštění zrcadla</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Úklid u&nbsp;hlavních vchodových dveří a&nbsp;mytí vchodových dveří</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Likvidace reklamních prospektů u&nbsp;schránek</p></div>
+              </div>
             </div>
-            <div class="service column left bg-light text-dark w-33">
+            <div class="service column left bg-light text-dark w-33 animation--fadeInFromSide d-2">
               <p class="label">2x ročně</p>
               <h4 class="m-b-1">Generální<br>úklid</h4>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Smetení pavučin</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Otření poštovních schránek</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Mytí oken ve společných prostorách domu</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Mytí výplně zábradlí</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Ošetření nerez prvků výtahu a&nbsp;vyčištění drážek dveří kabiny</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Mytí vchodových dveří</p></div>
-              <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p>Mytí světel</p></div>
+              <div class="column gap-1">
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Smetení pavučin</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Otření poštovních schránek</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Mytí oken ve společných prostorách domu</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Mytí výplně zábradlí</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Ošetření nerez prvků výtahu a&nbsp;vyčištění drážek dveří kabiny</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Mytí vchodových dveří</p></div>
+                <div class="row left text-dark"><span class="material-symbols-outlined">check_circle</span><p class="m-0">Mytí světel</p></div>
+              </div>
             </div>
           </div>
         </div>
@@ -135,17 +139,17 @@
           <h3>Co o mě říkají zákazníci?</h3>
           <p class="text-blue m-b-3">Důvěry svých zákazníků si vážím. Proto je pro mě jejich zpětná vazba důležitá.</p>
           <div class="row left text-blue">
-            <div class="column left w-30">
+            <div class="column left w-30 animation--fadeInFromBottom">
               <p class="feedback m-b-1 wg-5">S úklidem jsme naprosto spokojení, na všem se dá domluvit.</p>
               <p class="m-b-0 wg-5">Jana Malátná</p>
               <p class="m-0">SVJ Vysočanská</p>
             </div>
-            <div class="column left w-30">
+            <div class="column left w-30 animation--fadeInFromBottom d-1">
               <p class="feedback m-b-1 wg-5">Pečlivost, ochota, komunikace. Konečně se o úklid nemusíme bát!</p>
               <p class="m-b-0 wg-5">Petra Pokorná</p>
               <p class="m-0">SVJ Prosek</p>
             </div>
-            <div class="column left w-30">
+            <div class="column left w-30 animation--fadeInFromBottom d-2">
               <p class="feedback m-b-1 wg-5">Moc milá a fajn úklidovka. Máme radost, že jsme se našli.</p>
               <p class="m-0 wg-5">Lucie Konopná</p>
               <p class="m-0">SVJ Žižkov</p>
@@ -163,29 +167,32 @@
     <!-- CONTACT -->
     <footer class="contact bg-light z-5" id="kontakt">
       <div class="container">
-        <div class="content left">
+        <div class="content left animation--fadeInFromSide">
+          
           <h2 class="label">Kontakt</h2>
           <h3>Chcete si domluvit schůzku?</h3>
           <p>Pojďme se poznat osobně. Získáte ode mě nezávislou cenovou nabídku na pravidelný úklid.</p>
-          <form id="contact-form">
-            <div class="form-group">
-              <label for="name">Jméno</label>
-              <input type="text" id="name" name="name" required>
+          
+          <form class="w-50" id="contact-form" action="/php/mail.php" method="POST">
+            <div class="column w-100 m-b-1">
+              <label class="hide" for="name">Jméno</label>
+              <input type="text" placeholder="Jméno" id="name" name="name" required placeholder="Jméno" oninvalid="this.setCustomValidity('Prosím, zadejte vaše jméno')">
             </div>
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required>
+            <div class="column w-100 m-b-1">
+              <label class="hide" for="email">E-mail</label>
+              <input type="email" placeholder="E-mail" id="email" name="email" required>
             </div>
-            <div class="form-group">
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone">
+            <div class="column w-100 m-b-1">
+              <label class="hide" for="phone">Telefon</label>
+              <input type="tel" placeholder="Telefon" id="phone" name="phone">
             </div>
-            <div class="form-group">
-              <label for="message">Napište zprávu...</label>
-              <textarea id="message" name="message" required></textarea>
+            <div class="column w-100 m-b-3">
+              <label class="hide" for="message">Napište zprávu...</label>
+              <textarea id="message" placeholder="Vaše zpráva" name="message" required></textarea>
             </div>
             <button class="button--primary" type="submit">Odeslat</button>
           </form>
+          
         </div>
       </div>
       <div class="wave-container">

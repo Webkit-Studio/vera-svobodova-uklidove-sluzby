@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /styleguide/index.html
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.vera-svobodova.cz/sitemap.xml

@@ -62,3 +62,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+/*
+
+
+/* If Item is in Viewport 
+function isInViewport(item) {
+    var bounding = item.getBoundingClientRect(),
+        myElementHeight = item.offsetHeight,
+        myElementWidth = item.offsetWidth;
+
+    if(bounding.top >= -myElementHeight
+        && bounding.left >= -myElementWidth
+        && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+        && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var fromSide = document.getElementsByClassName("animation--fadeInFromSide");
+var fromBottom = document.getElementsByClassName("animation--fadeInFromBottom");
+
+/* Window Scrolling 
+window.addEventListener("scroll", function(){
+
+    Array.from(fromBottom).forEach(item => {
+        if(isInViewport(item)) {
+           item.classList.add("fadeInFromBottom");
+        }
+    });
+
+    Array.from(fromSide).forEach(item => {
+        if(isInViewport(item)) {
+           item.classList.add("fadeInFromSide");
+        }
+    });
+
+});
+
+*/
+
+
+/*$(window).scroll(function() {
+    $('.animation--fadeInFromSide').each(function(){
+        var top_of_element = $(this).offset().top;
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+  
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            // the element is visible, add the animation class
+            $(this).addClass('animate');
+        } else {
+            // the element is not visible, remove the animation class
+        $(this).removeClass('animate');
+        }
+    });
+});*/
