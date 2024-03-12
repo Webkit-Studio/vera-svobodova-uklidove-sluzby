@@ -6,10 +6,10 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 $mailheader = "From:".$name."<".$email.">\r\n";
-
 $recipient = "lukas@svobs.cz";
+$subject = "Nová žádost o úklid!";
 
-mail($recipient, "Někdo právě vyplnil kontaktní formulář!", $message, $mailheader) or die("Error!");
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
 echo'
 
@@ -73,8 +73,6 @@ echo'
   
 </html>
 
-
 ';
-
 
 ?>

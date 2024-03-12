@@ -58,27 +58,6 @@ body {
   box-sizing: border-box;
 }
 
-/* – Desktop – */
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 80px;
-  }
-}
-
-/* – Tablet – */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-/* – Mobile – */
-@media screen and (max-width: 425px) {
-  .container {
-    padding: 0 16px;
-  }
-}
-
 .content {
   width: 100%;
   display: flex;
@@ -254,7 +233,7 @@ header, section, footer, p {
 
 section, footer {
   position: relative;
-  padding: 120px 0 260px;
+  padding: 120px 0 calc((100vw / 5) + 80px);;
 }
 
 .z-1 { z-index: 10;}
@@ -304,6 +283,10 @@ section, footer {
   position: fixed;
   top: 0;
   z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-menu a {
@@ -418,10 +401,6 @@ section, footer {
 
 /* – – – CONTACT – – – */
 
-.contact {
-  padding-bottom: 360px;
-}
-
 /* – CONTACT FORM – */
 
 
@@ -442,17 +421,64 @@ form > div > input {
 }
 
 form > div > textarea {
-  padding-top: 32px;
+  padding-top: 24px;
   height: 100px;
   resize: vertical;
 }
 
+form > button {
+  float: right;
+}
+
+
+
+
+
 /* – – – RESPONSIVE SETTINGS – – – */
+
+/* – Desktop – */
+@media screen and (max-width: 1240px) {
+  .container { padding: 0 80px; }
+  .numbers { width: 100%!important; } 
+  .numbers > div { width: 50%; }
+}
+
+
+
+/* – Tablet – */
+@media screen and (max-width: 912px) {
+  .container {padding: 0 32px; }
+  .navbar > div > .row .center, .navbar > div > .button--primary { display: none; }
+}
+
+
+
+/* – Mobile – */
+@media screen and (max-width: 600px) {
+  .container { padding: 0 16px; }
+  h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+  h3 { font-size: 3.2rem; }
+  .hero {overflow: hidden;}
+  .numbers {display: none;}
+  form { width: 100%!important; }
+  .label { font-size: 0.9rem;}
+  .services > div > div > .row { flex-flow: column; gap: 2rem!important; margin-bottom: 200px }
+  .service { width: 100%; }
+  .button--primary { font-size: 1.2rem; font-weight: 500;}
+}
+
+
+
+
 
 
 .hide {
   display: none;
 }
+
+
+
+
 
 .fadeInFromSide {
   animation: fadeInFromSide var(--animation-duration) ease-out forwards;
